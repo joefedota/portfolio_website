@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+	<h1>Welcome to my Portfolio!</h1>
+
+	<div class="container">
+  		<div class="row">
+  			<div class="col-xs-6 col-md-3">
+    			<a href="#" class="thumbnail">
+      				<img src="{{ url_for('static', filename='cleantech.jpg') }}" alt="Cleantech">
+    			</a>
+  			</div>
+		</div>
+	</div>
+{% endblock %}

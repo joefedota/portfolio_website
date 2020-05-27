@@ -1,14 +1,52 @@
 {% extends "base.html" %}
 
 {% block app_content %}
-	<h1>Welcome to my Portfolio!</h1>
-
-	<div class="container">
+<div class="jumbotron">
+		<h1>Welcome to my Portfolio!</h1>
+		<h4>Here are some of my recent projects, click to learn more.</h4>
+		<div class="row">
+			<div class="col-xs-3 col-md-6"></div>
+			<div class="col-xs-3 col-md-6"></div>
+		</div>
+		<div class="row">
+			<div class="col-xs-3 col-md-6">
+				<h1> </h1>
+  			</div>
+  			<div class="col-xs-3 col-md-6">
+  			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-3 col-md-6">
+				<h1> </h1>
+  			</div>
+  			<div class="col-xs-3 col-md-6">
+  			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-3 col-md-6">
+				<h1> </h1>
+  			</div>
+  			<div class="col-xs-3 col-md-6">
+  			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-3 col-md-6">
+				<h4>Stanford Cleantech Application Demo</h4>
+  			</div>
+  			<div class="col-xs-3 col-md-6">
+  				<h4>This Website!</h4>
+  			</div>
+		</div>
   		<div class="row">
-  			<div class="col-xs-6 col-md-3">
-    			<a href="#" class="thumbnail">
-      				<img src="{{ url_for('static', filename='cleantech.jpg') }}" alt="Cleantech">
-    			</a>
+  			<div class="col-md-6">
+  				<a href="{{ url_for('cleantech') }}" class="thumbnail">
+  					<img src="{{ url_for('static', filename=img_path1) }}">
+  				</a>
+  			</div>
+  			<div class="col-md-6">
+  				<a href="#" class="thumbnail">
+  					<img src="{{ url_for('static', filename=img_path1) }}">
+  				</a>
   			</div>
 		</div>
 	</div>

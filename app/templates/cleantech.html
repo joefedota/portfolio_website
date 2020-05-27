@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+	<div class="container">
+		<h1>Stanford Cleantech Demo Application</h1>
+		<div class="row">
+			<div class="col-xs-3 col-md-6">
+				<h1> </h1>
+  			</div>
+  			<div class="col-xs-3 col-md-6">
+  			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-3 col-md-6">
+				<h1> </h1>
+  			</div>
+  			<div class="col-xs-3 col-md-6">
+  			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-3 col-md-6">
+				<h1> </h1>
+  			</div>
+  			<div class="col-xs-3 col-md-6">
+  			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<a href="{{ url_for('cleantech') }}" class="thumbnail">
+					<img src="{{ url_for('static', filename='cleantech2-tn.png') }}">
+				</a>
+			</div>
+			<div class="col-md-6">
+				<h2>Content will be posted here</h2>
+			</div>
+		</div>
+	</div>
+{% endblock %}
